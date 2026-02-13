@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tentang — PT Imuna Kreasi Utama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tentang PT Imuna Kreasi Utama: visi, misi, nilai, dan pendekatan kerja profesional.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <div class="container">
+    <a href="index.html" class="navbar-brand"><strong>IMUNA</strong> Kreasi Utama</a>
+    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="index.html" class="nav-link ">Beranda</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link active">Tentang</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link ">Layanan</a></li>
+        <li class="nav-item"><a href="governance.html" class="nav-link ">Tata Kelola</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link ">Kontak</a></li>
+      </ul>
+    </div>
+    <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+      <li class="nav-item d-none d-md-inline-flex align-items-center small text-muted">
+        <i class="fa-solid fa-envelope mr-2"></i> official@imunakreasiutama.com
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="content-wrapper">
+  <section class="content pt-3 pb-4">
+    <div class="container">
+      <div class="row">
+  <div class="col-lg-8">
+    <div class="card card-outline card-info">
+      <div class="card-header"><h3 class="card-title section-title"><i class="fa-solid fa-building mr-2"></i>Tentang PT Imuna Kreasi Utama</h3></div>
+      <div class="card-body">
+        <p><b>PT Imuna Kreasi Utama</b> bergerak di bidang TI, pengembangan perangkat lunak, dan jasa pemenuhan kebutuhan sistem operasional bisnis. Fokus: membangun sistem yang <b>stabil</b>, <b>aman</b>, dan <b>mudah dikembangkan</b>.</p>
+        <p>Kami menekankan praktik kerja yang sehat: definisi kebutuhan yang jelas, rancangan terdokumentasi, pengujian terstruktur, serta dukungan paska implementasi dengan SLA.</p>
+        <hr>
+        <div class="row">
+          <div class="col-md-6"><h5 class="section-title">Visi</h5><p>Menjadi perusahaan teknologi yang terpercaya, berintegritas, dan berkontribusi nyata melalui solusi digital yang berkelanjutan.</p></div>
+          <div class="col-md-6"><h5 class="section-title">Misi</h5>
+            <ul class="mb-0"><li>Mengembangkan solusi software yang andal dan aman.</li><li>Mendampingi klien dengan pendekatan profesional dan etis.</li><li>Membangun sistem yang efisien, terukur, dan jangka panjang.</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <div class="card-header"><h3 class="card-title"><i class="fa-solid fa-diagram-project mr-2"></i>Nilai Utama (Bagan)</h3></div>
+      <div class="card-body"><canvas id="chartValues" height="180"></canvas><div class="small-muted mt-2">Radar chart untuk merangkum nilai delivery.</div></div>
+    </div>
+    <div class="card card-outline card-dark">
+      <div class="card-header"><h3 class="card-title"><i class="fa-solid fa-circle-info mr-2"></i>Info Singkat</h3></div>
+      <div class="card-body">
+        <table class="table table-sm table-borderless mb-0">
+          <tr><th>Nama</th><td>PT Imuna Kreasi Utama</td></tr>
+          <tr><th>Bidang</th><td>IT & Jasa Profesional</td></tr>
+          <tr><th>Email</th><td>official@imunakreasiutama.com</td></tr>
+          <tr><th>Domisili</th><td>Indonesia</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+</div>
+
+<footer class="main-footer text-center">
+  <div class="container">
+    <div class="small footer-note"><strong>© 2026 PT Imuna Kreasi Utama</strong> • Teknologi Informasi & Jasa Profesional • Indonesia</div>
+  </div>
+</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+(() => {
+  new Chart(document.getElementById('chartValues'), {
+    type:'radar',
+    data:{ labels:['Integritas','Keamanan','Dokumentasi','Kualitas','Kecepatan','Keberlanjutan'],
+      datasets:[{ label:'Prioritas', data:[90,85,80,88,72,84], fill:true }] },
+    options:{ responsive:true, plugins:{ legend:{ position:'bottom' } }, scales:{ r:{ beginAtZero:true, max:100 } } }
+  });
+})();
+</script>
+</body>
+</html>

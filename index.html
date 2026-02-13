@@ -117,6 +117,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
 (() => {
+  // 1) Delivery stages allocation (stacked bar)
   new Chart(document.getElementById('chartDelivery'), {
     type: 'bar',
     data: {
@@ -139,6 +140,7 @@
     }
   });
 
+  // 2) Quality assurance pillars
   new Chart(document.getElementById('chartPillars'), {
     type: 'bar',
     data: {
